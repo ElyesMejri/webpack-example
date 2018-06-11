@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Webpack</title>
+
+  <!--bootstrap and our app css file-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body ng-app="app">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Webpack</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">FC Barcelone</a></li>
+      <li><a href="#">Real Madrid</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="container">
+    <h1 class="player-table-title">Ce tableau contient 2 joueurs.</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Team</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lionel Messi</td>
+                <td>Forward</td>
+                <td>FC Barcelona</td>
+                <td>
+                    <button type="button" class="btn btn-danger btn-sm">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Cristiano Ronaldo</td>
+                <td>Forward</td>
+                <td>Real Madrid</td>
+                <td>
+                    <button type="button" class="btn btn-danger btn-sm">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="../dist/build.js"></script>
+</body>
+</html>

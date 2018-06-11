@@ -1,0 +1,23 @@
+{
+  "name": "webpack-example",
+  "version": "1.0.0",
+  "description": "webpack first example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0"
+  }
+}
